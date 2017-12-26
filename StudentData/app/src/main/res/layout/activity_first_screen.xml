@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/uploadDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/uploadData"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <Button
+        android:id="@+id/retrieveDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:text="@string/retrieveData"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/sdsuText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+</RelativeLayout>

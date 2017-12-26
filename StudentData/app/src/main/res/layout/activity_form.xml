@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/nickNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/enterNickName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/nickNameID"
+        android:ems="10"
+        android:hint="@string/enterPassword"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/countryID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/passwordID"
+        android:ems="10"
+        android:hint="@string/setCountry"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cityID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/setCountryStateButtonID"
+        android:ems="10"
+        android:hint="@string/enterCity"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/yearSpinnerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/year"
+        android:inputType="number"
+        android:layout_below="@+id/cityID"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/cityID" />
+
+    <EditText
+        android:id="@+id/longitudeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/yearSpinnerID"
+        android:ems="10"
+        android:hint="@string/setLongitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/latitudeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/longitudeID"
+        android:ems="10"
+        android:hint="@string/setLatitude"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/setCountryStateButtonID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setCountryState"
+        android:layout_alignStart="@+id/cityID"
+        android:layout_below="@+id/stateID" />
+
+    <Button
+        android:id="@+id/setLatLongID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setLatLong"
+        android:layout_below="@+id/latitudeID"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/latitudeID" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickName"
+        android:layout_alignBaseline="@+id/nickNameID"
+        android:layout_alignBottom="@+id/nickNameID"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_alignBaseline="@+id/passwordID"
+        android:layout_alignBottom="@+id/passwordID"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/countryID"
+        android:layout_alignBottom="@+id/countryID"
+        android:layout_alignStart="@+id/textView5"
+        android:text="@string/country" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        android:layout_alignBaseline="@+id/cityID"
+        android:layout_alignBottom="@+id/cityID"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:layout_alignBaseline="@+id/yearSpinnerID"
+        android:layout_alignBottom="@+id/yearSpinnerID"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        android:layout_alignBaseline="@+id/longitudeID"
+        android:layout_alignBottom="@+id/longitudeID"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude"
+        android:layout_alignBaseline="@+id/latitudeID"
+        android:layout_alignBottom="@+id/latitudeID"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Button
+        android:id="@+id/uploadDataID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/uploadData" />
+
+    <EditText
+        android:id="@+id/stateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/countryID"
+        android:ems="10"
+        android:hint="@string/setState"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stateID"
+        android:layout_alignBottom="@+id/stateID"
+        android:layout_alignStart="@+id/textView4"
+        android:text="@string/state" />
+
+    <Button
+        android:id="@+id/formBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadDataID"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/setLatLongID"
+        android:text="@string/back"
+        android:layout_alignTop="@+id/clearAllFieldsButton" />
+
+    <Button
+        android:id="@+id/clearAllFieldsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadDataID"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/formBackButton"
+        android:text="@string/clearAllFields" />
+
+</RelativeLayout>
